@@ -17,13 +17,13 @@
 		84325A3D18237BB0009BECA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84325A3B18237BB0009BECA8 /* Main.storyboard */; };
 		84325A4018237BB0009BECA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84325A3F18237BB0009BECA8 /* ViewController.m */; };
 		84325A4318237BB0009BECA8 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 84325A4218237BB0009BECA8 /* MyScene.m */; };
-		84325A4518237BB0009BECA8 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 84325A4418237BB0009BECA8 /* Spaceship.png */; };
 		84325A4718237BB0009BECA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84325A4618237BB0009BECA8 /* Images.xcassets */; };
 		84325A4E18237BB0009BECA8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84325A4D18237BB0009BECA8 /* XCTest.framework */; };
 		84325A4F18237BB0009BECA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84325A2718237BB0009BECA8 /* Foundation.framework */; };
 		84325A5018237BB0009BECA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84325A2B18237BB0009BECA8 /* UIKit.framework */; };
 		84325A5818237BB0009BECA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84325A5618237BB0009BECA8 /* InfoPlist.strings */; };
 		84325A5A18237BB0009BECA8 /* MiniPoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84325A5918237BB0009BECA8 /* MiniPoolTests.m */; };
+		84325A6418238345009BECA8 /* images.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 84325A6318238345009BECA8 /* images.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +53,13 @@
 		84325A3F18237BB0009BECA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84325A4118237BB0009BECA8 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		84325A4218237BB0009BECA8 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		84325A4418237BB0009BECA8 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		84325A4618237BB0009BECA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84325A4C18237BB0009BECA8 /* MiniPoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniPoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84325A4D18237BB0009BECA8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		84325A5518237BB0009BECA8 /* MiniPoolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniPoolTests-Info.plist"; sourceTree = "<group>"; };
 		84325A5718237BB0009BECA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84325A5918237BB0009BECA8 /* MiniPoolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniPoolTests.m; sourceTree = "<group>"; };
+		84325A6318238345009BECA8 /* images.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = images.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +121,7 @@
 		84325A2F18237BB0009BECA8 /* MiniPool */ = {
 			isa = PBXGroup;
 			children = (
+				84325A6318238345009BECA8 /* images.atlas */,
 				84325A3818237BB0009BECA8 /* AppDelegate.h */,
 				84325A3918237BB0009BECA8 /* AppDelegate.m */,
 				84325A3B18237BB0009BECA8 /* Main.storyboard */,
@@ -128,7 +129,6 @@
 				84325A3F18237BB0009BECA8 /* ViewController.m */,
 				84325A4118237BB0009BECA8 /* MyScene.h */,
 				84325A4218237BB0009BECA8 /* MyScene.m */,
-				84325A4418237BB0009BECA8 /* Spaceship.png */,
 				84325A4618237BB0009BECA8 /* Images.xcassets */,
 				84325A3018237BB0009BECA8 /* Supporting Files */,
 			);
@@ -241,8 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84325A3418237BB0009BECA8 /* InfoPlist.strings in Resources */,
+				84325A6418238345009BECA8 /* images.atlas in Resources */,
 				84325A4718237BB0009BECA8 /* Images.xcassets in Resources */,
-				84325A4518237BB0009BECA8 /* Spaceship.png in Resources */,
 				84325A3D18237BB0009BECA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
