@@ -296,21 +296,21 @@ typedef enum GameStatus{
             float diffy = location.y - self.whiteBall.position.y;
             float angle = atan2(diffy, diffx);
             float diff = pow(diffx, 2) + pow(diffy, 2);
-            __block CGPoint target;
-            CGPoint endPoint =  CGPointMake(cos(angle)*1000+self.whiteBall.position.x, sin(angle)*1000+self.whiteBall.position.y);
+//            __block CGPoint target;
+//            CGPoint endPoint =  CGPointMake(cos(angle)*1000+self.whiteBall.position.x, sin(angle)*1000+self.whiteBall.position.y);
             
-            [self.physicsWorld enumerateBodiesAlongRayStart:self.whiteBall.position end:endPoint usingBlock:^(SKPhysicsBody *body, CGPoint point, CGVector normal, BOOL *stop) {
-                target = point;
-                *stop = YES;
-            }];
+//            [self.physicsWorld enumerateBodiesAlongRayStart:self.whiteBall.position end:endPoint usingBlock:^(SKPhysicsBody *body, CGPoint point, CGVector normal, BOOL *stop) {
+//                target = point;
+//                *stop = YES;
+//            }];
             if (diff > pow(BALL_RADIUS * 4, 2)) {
                 self.cueStick.zRotation = atan2(diffy,diffx);
-                [self drawLine:CGPointMake(cos(angle)*BALL_RADIUS*1.5+self.whiteBall.position.x, sin(angle)*BALL_RADIUS*1.5+self.whiteBall.position.y) toPoint:CGPointMake(target.x-  cos(angle)*BALL_RADIUS*2,target.y - sin(angle)*BALL_RADIUS*2)];
+                [self drawLine:CGPointMake(cos(angle)*BALL_RADIUS*1.5+self.whiteBall.position.x, sin(angle)*BALL_RADIUS*1.5+self.whiteBall.position.y) toPoint:CGPointMake(location.x-  cos(angle)*BALL_RADIUS*1.5,location.y - sin(angle)*BALL_RADIUS*1.5)];
                 self.gunSight.hidden = NO;
-                self.gunSight.position = CGPointMake(target.x-  cos(angle)*BALL_RADIUS,target.y - sin(angle)*BALL_RADIUS);
+                self.gunSight.position = location;
             }else{
                 [[self childNodeWithName:@"line"] removeFromParent];
-                self.gunSight.position = CGPointMake(target.x-  cos(angle)*BALL_RADIUS,target.y - sin(angle)*BALL_RADIUS);
+                self.gunSight.position = location;
                 self.cueStick.zRotation = atan2(diffy,diffx);
             }
             
