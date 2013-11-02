@@ -22,7 +22,7 @@
     
     SKView * skView = (SKView *)self.view;
     if (!skView.scene) {
-        BOOL isDebug = NO;
+        BOOL isDebug = YES;
         skView.showsFPS = isDebug;
         skView.showsNodeCount = isDebug;
         skView.showsDrawCount = isDebug;
